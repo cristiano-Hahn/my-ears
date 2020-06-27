@@ -21,9 +21,10 @@ dependencies:
     sdk: flutter
   
   splashscreen: ^1.2.0
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
+  vibration: ^1.4.0
   cupertino_icons: ^0.1.2
+  mic_stream: ^0.2.1
+  noise_meter: ^1.2.0+1
 
 dev_dependencies:
   flutter_test:

@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 class DbSlider extends StatelessWidget {
   final double value;
+  final double min;
+  final double max;
   final Function(double) onChanged;
 
-  DbSlider({this.value, this.onChanged});
+  DbSlider({this.value, this.onChanged, this.min, this.max});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +20,8 @@ class DbSlider extends StatelessWidget {
           trackHeight: 8,
         ),
         child: Slider(
-          min: 1,
-          max: 100,
+          min: min,
+          max: max,
           value: value,
           onChanged: onChanged,
         ),
